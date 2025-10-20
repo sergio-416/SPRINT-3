@@ -47,6 +47,7 @@ function moviesAverageByCategory(arr, category) {
 function hoursToMinutes(arr) {
   return arr.map((movie) => ({
     ...movie,
+    
     duration:
       parseInt(movie.duration.match(/(\d+)h/)?.[1] || 0) * 60 +
       parseInt(movie.duration.match(/(\d+)min/)?.[1] || 0)
@@ -56,10 +57,11 @@ function hoursToMinutes(arr) {
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear(arr, year) {
   const moviesOfYear = arr.filter((movie) => movie.year === year);
-  if (moviesOfYear.length === 0) return null;
-  return moviesOfYear.reduce((best, movie) =>
+  if (moviesOfYear.length === 0) return [];
+  const bestMovie = moviesOfYear.reduce((best, movie) =>
     movie.score > best.score ? movie : best
   );
+  return [bestMovie];
 }
 
 // The following is required to make unit tests work.

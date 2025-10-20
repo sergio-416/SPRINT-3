@@ -293,8 +293,56 @@ describe('Function "orderByYear"', () => {
 // Exercise 6
 // YOUR CODE HERE. Test moviesAverageByCategory()
 describe('Function "moviesAverageByCategory"', () => {
-  it('ADD YOUR CODE IN films.spec.js file', () => {
-    expect(typeof hoursToMinutes).toBe('coffee');
+  it('should be declared', () => {
+    expect(typeof moviesAverageByCategory).toBe('function');
+  });
+
+  it('should return a number', () => {
+    expect(typeof moviesAverageByCategory(movies, 'Drama')).toBe('number');
+  });
+
+  it('should return the average score of movies in a category', () => {
+    const testArr = [
+      {
+        title: 'Film1',
+        year: 1957,
+        director: 'Stanley Kubrick',
+        duration: '1h 28min',
+        genre: ['Drama', 'War'],
+        score: 8.0
+      },
+      {
+        title: 'Film2',
+        year: 2012,
+        director: 'Quentin Tarantino',
+        duration: '2h 45min',
+        genre: ['Drama', 'Western'],
+        score: 9.0
+      },
+      {
+        title: 'Film3',
+        year: 1994,
+        director: 'Director',
+        duration: '2h 34min',
+        genre: ['Crime', 'Thriller'],
+        score: 7.0
+      }
+    ];
+    expect(moviesAverageByCategory(testArr, 'Drama')).toBe(8.5);
+  });
+
+  it('should return 0 if no movies match the category', () => {
+    const testArr = [
+      {
+        title: 'Film1',
+        year: 1957,
+        director: 'Stanley Kubrick',
+        duration: '1h 28min',
+        genre: ['Drama', 'War'],
+        score: 8.0
+      }
+    ];
+    expect(moviesAverageByCategory(testArr, 'Comedy')).toBe(0);
   });
 });
 
