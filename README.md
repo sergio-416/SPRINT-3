@@ -1,54 +1,54 @@
-# Film Data Analysis
+# SPRINT 3 - Movie Data Analysis Application
 
-Aplicación web para el análisis y filtrado de datos de películas utilizando JavaScript moderno y metodologías TDD.
+Web application for analyzing and filtering movie data using modern JavaScript and TDD methodologies.
 
-## Descripción
+## Description
 
-Proyecto desarrollado como parte del IT Academy de Barcelona Activa que implementa diversas funcionalidades para procesar y analizar información cinematográfica mediante el uso de arrays, métodos funcionales y testing automatizado.
+Project developed as part of IT Academy Barcelona Activa that implements various functionalities to process and analyze film information through arrays, functional methods, and automated testing.
 
-## Funcionalidades
+## Features
 
-- **Extracción de directores**: Obtención de listado completo de directores
-- **Filtrado por director**: Búsqueda de películas por director específico
-- **Cálculo de promedios**: Media de puntuaciones por director y género
-- **Ordenamiento alfabético**: Ordenación de películas por título (top 20)
-- **Ordenamiento cronológico**: Ordenación por año y título
-- **Conversión de duración**: Transformación de formato hora/minuto a minutos totales
-- **Mejor película por año**: Identificación de la película mejor valorada por año
+- **Director Extraction**: Complete list of directors retrieval
+- **Filter by Director**: Search movies by specific director
+- **Average Calculations**: Score averages by director and genre
+- **Alphabetical Sorting**: Movie sorting by title (top 20)
+- **Chronological Sorting**: Sorting by year and title
+- **Duration Conversion**: Transform hour/minute format to total minutes
+- **Best Movie per Year**: Identification of highest-rated movie by year
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - JavaScript (ES6+)
 - Node.js
 - npm
 - Jest (Testing)
 
-## Metodología
+## Methodology
 
-El proyecto implementa **Test-Driven Development (TDD)**, donde cada funcionalidad se valida mediante tests unitarios antes de su implementación.
+The project implements **Test-Driven Development (TDD)**, where each functionality is validated through unit tests before implementation.
 
-## Instalación y Uso
+## Installation and Usage
 
 ```bash
 npm install
 npm run test:watch
 ```
 
-Los resultados de los tests se generan automáticamente en `test-results.html`.
+Test results are automatically generated in `test-results.html`.
 
-## Estructura del Código
+## Code Structure
 
-Cada función mantiene el **principio de responsabilidad única (SRP)**, separando la lógica de procesamiento del renderizado de datos.
+Each function maintains the **Single Responsibility Principle (SRP)**, separating processing logic from data rendering.
 
-## Estado del Proyecto
+## Project Status
 
-✅ Todos los tests pasados correctamente
+✅ All tests passed successfully
 
-## Autor
+## Author
 
 **Sergio Morey**
 [GitHub](https://github.com/sergio-416)
 
 ---
 
-Proyecto desarrollado en IT Academy - Barcelona Activa
+Project developed at IT Academy - Barcelona Activa
